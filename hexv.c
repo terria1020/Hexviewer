@@ -30,6 +30,7 @@ void print(FILE *fp)
 		{
 			if (feof(fp))
 			{
+				printf("\n");
 				return;
 			}
 			else
