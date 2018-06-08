@@ -24,10 +24,13 @@ int main(int argc, char *argv[])
 
 void print(FILE *fp)
 {
+	int index = 0x0;
 	while (1)
 	{
-		for (int i = 0; i <= 9; i++)
+		printf("0x%x : ", index);
+		for (int i = 0; i <= 15; i++)
 		{
+			
 			if (feof(fp))
 			{
 				printf("\n");
@@ -39,6 +42,7 @@ void print(FILE *fp)
 			}
 		}
 		printf("\n");
+		index += 0x10;
 	}
 
 }
